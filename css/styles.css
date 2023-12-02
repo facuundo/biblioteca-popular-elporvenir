@@ -3,8 +3,9 @@
 
 /*
 primario: #FBFCEE
-secundario: #494737
-terciario: #696758
+secundario: #8dcc6a
+
+terciario: #A3B18A
 
 fuente 1: 'Roboto',
 fuente 2: 'Lato', 
@@ -14,7 +15,6 @@ fuente 2: 'Lato',
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	list-style: none;
 }
 a{
 	text-decoration: none;
@@ -23,18 +23,74 @@ body {
 	background: #FBFCEE;
 }
 .barra{
+	background: lightgrey;
+	color: grey;
 	display: flex;
-	padding: 0 0.5em;
-	border: solid 2px black;
-	.barra_horario{
-		display: flex;
-		align-items: flex-start;
-	}
-	.barra_redes .icono{
-		align-items: flex-end;
-	}
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5em;
+}
+.barra_horario{
+	display: flex;
+}
+.barra_horario p{
+	font-family: 'Roboto';
+	font-size: 1rem;
+}
+.barra_redes{
+	min-width: 500px;
+	display: flex;
+	justify-content: flex-end;
+	gap: 1.5em;
+	position: relative;
+	right: 2em;
+}
+.barra_redes li{
+	list-style: none;
+}
+.barra_redes li a{
+	text-decoration: none;
+	color: #3b3a3a;
 }
 
-.fa-brands{
-	color: #3b3a3a;
+
+.segundo_header{
+	background: #8dcc6a;
+	color: darkgreen;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3em;
+	position: relative;
+}
+.logo img {
+	width: 5.2em;
+}
+.logo{
+	display: flex;
+	position: absolute;
+	left: 2em;
+}
+
+.texto_nav{
+	display: flex;
+	min-width: 500px;
+	font-family: 'Lato';
+	font-size: 1.2rem;
+	display: flex;
+}
+
+
+.nombre{
+	font-size: 1.2em;
+	position: absolute;
+	top: 35%;
+	right: 40%;
+
+}
+.fundacion{
+	font-size: 1em;
+	position: absolute;
+	right: 1em;
+	bottom: 0.2em;
 }
