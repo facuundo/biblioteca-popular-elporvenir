@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/*
+primario: #FBFCEE
+secundario: #494737
+terciario: #696758
+
+fuente 1: 'Roboto',
+fuente 2: 'Lato', 
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body {
+	background: #FBFCEE;
+}
+.barra{
+	display: flex;
+	padding: 0 0.5em;
+	border: solid 2px black;
+	.barra_horario{
+		display: flex;
+		align-items: flex-start;
+	}
+	.barra_redes .icono{
+		align-items: flex-end;
+	}
+}
+
+.fa-brands{
+	color: #3b3a3a;
+}
