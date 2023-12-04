@@ -4,8 +4,9 @@
 /*
 primario: #FBFCEE
 secundario: #8dcc6a
-
 terciario: #A3B18A
+color biblioteca 1: #494737
+color biblioteca 2: #696758
 
 fuente 1: 'Roboto',
 fuente 2: 'Lato', 
@@ -22,13 +23,15 @@ a{
 body {
 	background: #FBFCEE;
 }
+
+/* Header uno */
 .barra{
 	background: lightgrey;
 	color: grey;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0.5em;
+	padding: 0.4em;
 }
 .barra_horario{
 	display: flex;
@@ -53,7 +56,7 @@ body {
 	color: #3b3a3a;
 }
 
-
+/* Header dos */
 .segundo_header{
 	background: #8dcc6a;
 	color: darkgreen;
@@ -93,4 +96,28 @@ body {
 	position: absolute;
 	right: 1em;
 	bottom: 0.2em;
+}
+
+/* Header tres */
+
+.barra_dos{
+	background: #696758;
+	display: flex;
+	padding: 0.7em;
+}
+.barra_nav{
+	width: 98vw;
+	display: flex;
+	justify-content: space-evenly;
+	gap: 15px;
+}
+.barra_nav li{
+	list-style: none;
+
+}
+.barra_nav li a{
+	
+	color: white;
+	font-family: 'Lato';
+	text-transform: uppercase;
 }
