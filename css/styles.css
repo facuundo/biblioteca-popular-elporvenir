@@ -20,8 +20,15 @@ fuente 2: 'Lato',
 a{
 	text-decoration: none;
 }
+html, body{
+	height: 100%;
+}
 body {
 	background: #FBFCEE;
+}
+#contenedor{
+	min-height: 100%;
+	margin-bottom: -0.5em;
 }
 
 /* Header uno */
@@ -116,8 +123,57 @@ body {
 
 }
 .barra_nav li a{
-	
 	color: white;
 	font-family: 'Lato';
 	text-transform: uppercase;
+}
+
+/* Logo Whatsapp */
+.whatsapp{
+	width: 3%;
+	position: fixed;
+	bottom: 2.3em;
+	right: 1em;
+}
+.whatsapp a i{
+	color: green;
+	font-size: 2.5em;
+}
+
+
+/* footer */
+footer, #push {
+	height: 0.5em;
+}
+.barra_footer{
+
+	background: lightgrey;
+	color: grey;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.4em;
+
+}
+.barra_f_texto{
+	display: flex;
+}
+.barra_f_texto p{
+	font-family: 'Roboto';
+	font-size: 1rem;
+}
+.barra_redes_fin{
+	min-width: 500px;
+	display: flex;
+	justify-content: flex-end;
+	gap: 1.5em;
+	position: relative;
+	right: 2em;
+}
+.barra_redes_fin li{
+	list-style: none;
+}
+.barra_redes_fin li a{
+	text-decoration: none;
+	color: #3b3a3a;
 }
