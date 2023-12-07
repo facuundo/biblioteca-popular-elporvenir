@@ -42,13 +42,14 @@ body {
 }
 .barra_horario{
 	display: flex;
+	width: 80%;
+	min-width: 100px;
 }
 .barra_horario p{
 	font-family: 'Roboto';
-	font-size: 1rem;
+	font-size: 1em;
 }
 .barra_redes{
-	min-width: 500px;
 	display: flex;
 	justify-content: flex-end;
 	gap: 1.5em;
@@ -63,13 +64,40 @@ body {
 	color: #3b3a3a;
 }
 
+@media (max-width: 576px) {
+	.barra {
+		padding: 0.1em;
+	}
+	.barra_horario{
+		
+	}
+	.barra_redes {
+		
+	}
+}
+
+@media (min-width: 577px) and (max-width: 1000px) {
+	.barra{
+		padding: 0.2em;
+	}
+
+	.barra_horario{
+		width: 80%;
+	}
+	.barra_redes {
+		gap: 0.8em;
+		position: relative;
+		right: 0.5em;
+	}
+}
+
 /* Header dos */
 .segundo_header{
 	background: #8dcc6a;
 	color: darkgreen;
 	display: flex;
 	align-items: center;
-	padding: 3em;
+	padding: 2em;
 	position: relative;
 	justify-content: center;
 }
@@ -126,15 +154,18 @@ body {
 }
 
 /* Logo Whatsapp */
-.whatsapp{
-	width: 3%;
+.icono_wsp{
 	position: fixed;
-	bottom: 2.3em;
-	right: 1em;
-}
-.whatsapp a i{
 	color: green;
-	font-size: 2.5em;
+	background: palegreen;
+	font-size: 50px;
+	line-height: 30px;
+	bottom: 130px;
+	right: 40px;
+	border-radius: 50px;
+	text-align: center;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+	z-index: 100;
 }
 
 /* section 4 */
@@ -145,7 +176,7 @@ body {
 	background: #8dcc6a;
 	color: darkgreen;
 	display: flex;
-	padding: 0.5em;
+	padding: 0.3em;
 	width: 100%;
 	position: absolute;
 	bottom: 0;
