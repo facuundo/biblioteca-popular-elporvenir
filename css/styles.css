@@ -21,7 +21,7 @@ a{
 	text-decoration: none;
 }
 html, body{
-	height: 100%;
+	min-height: 100%;
 }
 body {
 	background: #FBFCEE;
@@ -168,23 +168,135 @@ body {
 	z-index: 100;
 }
 
+/* section 2 */
+
+.contenedor_agenda{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.agenda_pos{
+	width: 300px;
+	height: 240px;
+	right: 1em;
+	top: 1em;
+	position: absolute;
+	background: rgba(1.91, 114.75, 13.20, 0.40);
+}
+.agenda_texto{
+	width: 230px;
+	height: 24px;
+	right: 1.5em;
+	top: 1em;
+	position: absolute;
+	text-align: center;
+	color: black;
+	font-size: 25px;
+	font-family: serif;
+	font-weight: 400;
+	word-wrap: break-word;
+}
+.back_agenda_uno{
+	width: 300px;
+	height: 32px;
+	right: 1em;
+	top: 5em;
+	position: absolute;
+	background: #D9D9D9;
+}
+.back_agenda_dos{
+	width: 300px;
+	height: 32px;
+	right: 1em;
+	top: 8em;
+	position: absolute;
+	background: #D9D9D9;
+}
+.back_agenda_tres{
+	width: 300px;
+	height: 32px;
+	right: 1em;
+	top: 11em;
+	position: absolute;
+	background: #D9D9D9;
+}
+.evento_tres{
+	width: 300px;
+	height: 32px;
+	right: 1em;
+	top: 8em;
+	position: absolute;
+	text-align: center;
+	color: black;
+	font-size: 17px;
+	font-family: serif;
+	font-weight: 400;
+	word-wrap: break-word;
+}
+.evento_dos{
+	width: 300px;
+	height: 32px;
+	right: 1em;
+	top: 10.7em;
+	position: absolute;
+	text-align: center;
+	color: black;
+	font-size: 17px;
+	font-family: serif;
+	font-weight: 400;
+	word-wrap: break-word;
+}
+.evento_uno{
+	width: 300px;
+	height: 32px;
+	right: 1em;
+	top: 5em;
+	position: absolute;
+	text-align: center;
+	color: black;
+	font-size: 17px;
+	font-family: serif;
+	font-weight: 400;
+	word-wrap: break-word;
+}
+.ver_mas{
+	width: 80px;
+	height: 32px;
+	right: 0;
+	top: 12em;
+	position: absolute;
+	color: #1921E1;
+	font-size: 18px;
+	font-family: serif;
+	font-weight: 400;
+	word-wrap: break-word;
+}
+
 /* section 4 */
 .section_cuatro{
+
+}
+
+
+
+
+/* footer */
+footer, #push {
+	/* fixed o sticky si hay mucho contenido */
+	padding-top: 10px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 
 }
 .section_ultima{
 	background: #8dcc6a;
 	color: darkgreen;
 	display: flex;
-	padding: 0.3em;
 	width: 100%;
-	position: absolute;
-	bottom: 0;
 	justify-content: space-between;
-	margin-bottom: 0.5em;
+	
 }
-
-
 address{
 	font-size: 1.1em;
 	min-width: 32%;
@@ -204,13 +316,6 @@ address a{
 }
 .logo_final{
 	width: 7.3%;
-}
-
-
-
-/* footer */
-footer, #push {
-	height: 0.5em;
 }
 .barra_footer{
 
