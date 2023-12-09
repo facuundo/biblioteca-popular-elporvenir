@@ -276,21 +276,6 @@ body {
 	word-wrap: break-word;
 }
 
-/* section 3 */
-.contenedor_carrusel{
-	display: flex;
-	width: 60%;
-	height: 80vh;
-	overflow-x: scroll;
-	scroll-snap-type: x mandatory;
-}
-.contenedor_carrusel img{
-	flex: 0 0 100%;
-	width: 100%;
-	object-fit: cover;
-	scroll-snap-align: center;
-}
-
 /* section 4 */
 .section_cuatro{
 

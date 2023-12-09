@@ -6,7 +6,10 @@
 	<link rel="icon" type="images/jpg" href="images/favicon.ico">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<title>Biblioteca Popular El Porvenir</title>
+	<script defer src="boton.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/carrusel.css">
 
 </head>
 <body>
@@ -131,25 +134,57 @@
 	</section>
 	
 <!-- seccion carrusel- sobre nosotros:
-poner texto dentro de las imagenes y el boton para ir pasando -->
-	<section class="section_tres">
-		<h2></h2>
-		<div class="contenedor_carrusel">
-			<img 
-				class="imagen_uno" 
-				src="images/biblioteca_uno.jpeg"
-			/>
-			<img 
-				class="imagen_dos" 
-				src="images/biblioteca_dos.jpeg"
-			/>
-			<img 
-				class="imagen_tres" 
-				src="images/biblioteca_tres.jpeg"
-			/>
-  		</div>
-		
-	</section>
+-->
+
+	<section id="container-slider">    
+   		<a href="javascript: funcionEjecutar('anterior');" class="arrowPrev">
+   			<i class="fas fa-chevron-circle-left"></i>
+   		</a>
+   		<a href="javascript: funcionEjecutar('siguiente');" class="arrowNext">
+   			<i class="fas fa-chevron-circle-right"></i>
+   		</a>
+   <ul class="listslider">
+     	<li>
+     		<a itlist="itList_0" href="#" class="item-select-slid"></a>
+     	</li>
+     	<li>
+     		<a itlist="itList_1" href="#"></a>
+     	</li>
+     	<li>
+     		<a itlist="itList_2" href="#"></a>
+     	</li>
+   </ul>
+   <ul id="slider">
+     	<li style="background-image: url('images/biblioteca_uno.jpeg'); z-index:0; opacity: 1;">
+       		<div class="content_slider" >
+         		<div>
+           			<h2>Sobre Nosotros</h2>
+       				<p>Somos la Biblioteca Popular El Porvenir, fundada en 1872.
+       				Conocé más sobre la Biblioteca en este enlace.</p>
+       				<a href="sobre-nosotros.html" target="_blank" class="btnSlider">Saber más</a>
+     			</div>
+       		</div>
+     	</li>
+     	<li style="background-image: url('images/biblioteca_dos.jpeg'); ">
+       		<div class="content_slider" >
+         		<div>
+           			<h2>¿Qué podes encontrar en la Biblioteca?</h2>
+       				<p>Tenemos más de ... libros, revistas y archivos que podes visitar</p>
+       				<a href="contacto.html" target="_blank" class="btnSlider">Acceder</a>
+     			</div>
+       		</div>
+     	</li>
+     	<li style="background-image: url('images/biblioteca_tres.jpeg'); ">
+       		<div class="content_slider" >
+         		<div>
+           			<h2>Eventos y más...</h2>
+       				<p>También contamos con el Museo de Bellas Artes</p>
+       				<a href="#agenda.html" target="_blank" class="btnSlider">Nuestra agenda</a>
+     			</div>
+       		</div>
+     	</li>
+  	</ul>
+</section>
 	
 	<section class="section_cuatro">
 		
