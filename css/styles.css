@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 /*
 primario: #FBFCEE
@@ -65,13 +67,14 @@ body {
 
 @media (max-width: 576px) {
 	.barra {
-		padding: 0.1em;
+		padding: 0;
 	}
 	.barra_horario{
-		
+		width: 70%;
+		font-size: 0.8em;
 	}
 	.barra_redes {
-		
+		gap: 0.5em;
 	}
 }
 
@@ -129,6 +132,43 @@ body {
 	bottom: 0.2em;
 }
 
+@media (max-width: 576px) {
+	.segundo_header{
+		padding: 1.5em;
+	}
+	
+	.texto_nav{
+		min-width: 100px;
+		font-size: 0.6em;
+	}
+	.logo img {
+	width: 3em;
+	}
+	.logo{
+	display: flex;
+	position: absolute;
+	left: 0.5em;
+	}
+}
+
+@media (min-width: 577px) and (max-width: 1000px) {
+	.segundo_header{
+		padding: 1.6em;
+	}
+	.texto_nav{
+		min-width: 100px;
+		font-size: 1em;
+	}
+	.logo img {
+	width: 4.2em;
+	}
+	.logo{
+	display: flex;
+	position: absolute;
+	left: 1.7em;
+	}
+}
+
 /* Header tres */
 
 .barra_dos{
@@ -152,6 +192,7 @@ body {
 	text-transform: uppercase;
 }
 
+
 /* Logo Whatsapp */
 .icono_wsp{
 	position: fixed;
@@ -167,12 +208,7 @@ body {
 	z-index: 100;
 }
 
-/* section 1 */
-.section_uno{
-	
-}
-
-/* section 2 */
+/* section agenda */
 
 .contenedor_agenda{
 	width: 100%;
@@ -196,7 +232,7 @@ body {
 	text-align: center;
 	color: black;
 	font-size: 25px;
-	font-family: serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	word-wrap: break-word;
 }
@@ -266,15 +302,66 @@ body {
 .ver_mas{
 	width: 80px;
 	height: 32px;
-	right: 0;
+	right: 0.6em;
 	top: 12em;
 	position: absolute;
 	color: #1921E1;
 	font-size: 18px;
-	font-family: serif;
+	font-family: 'Montserrat', serif;
 	font-weight: 400;
 	word-wrap: break-word;
 }
+
+/* section noticias */
+.section_noticias{
+	
+	background: linear-gradient(10deg, rgba(213,213,213,1) 0%, rgba(1,130,12,0.9556197478991597) 100%, rgba(166,198,167,1) 100%);
+	position: relative;
+	width: 59%;
+	margin: 2% 4.5em;
+	padding: 1.5em 1em;
+	padding-bottom: 7em;
+}
+.section_noticias h2{
+	font-family: 'Nunito', sans-serif;
+	background: #8dcc6a;
+	color: white;
+	text-align: center;
+	padding: 0.4em;
+	border-radius: 10px;
+	position: absolute;
+	top: 0;
+	left: 4em;
+	font-size: 1.4em;
+
+}
+.section_noticias p, h4{
+	font-family: 'Montserrat', serif;
+	
+}
+.noticia_uno{
+	font-weight: 600;
+	width: 100%;
+	position: absolute;
+	top: 4em;
+}
+.noticia_dos{
+	font-weight: 600;
+	width: 100%;
+	position: absolute;
+	top: 5.5em;
+
+}
+.saber_mas{
+	font-weight: 800;
+	width: 38%;
+	position: absolute;
+	bottom: 0;
+	right: 1px;
+	
+}
+	
+
 
 /* section 4 */
 .section_cuatro{
