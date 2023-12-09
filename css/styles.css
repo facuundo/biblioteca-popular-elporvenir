@@ -20,15 +20,14 @@ fuente 2: 'Lato',
 a{
 	text-decoration: none;
 }
-html, body{
-	min-height: 100%;
-}
+
+
+
 body {
 	background: #FBFCEE;
-}
-#contenedor{
-	min-height: 100%;
-	margin-bottom: -0.5em;
+	position: relative;
+	padding-bottom: 8em;
+	min-height: 100vh;
 }
 
 /* Header uno */
@@ -168,6 +167,11 @@ body {
 	z-index: 100;
 }
 
+/* section 1 */
+.section_uno{
+	
+}
+
 /* section 2 */
 
 .contenedor_agenda{
@@ -272,6 +276,21 @@ body {
 	word-wrap: break-word;
 }
 
+/* section 3 */
+.contenedor_carrusel{
+	display: flex;
+	width: 60%;
+	height: 80vh;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+}
+.contenedor_carrusel img{
+	flex: 0 0 100%;
+	width: 100%;
+	object-fit: cover;
+	scroll-snap-align: center;
+}
+
 /* section 4 */
 .section_cuatro{
 
@@ -282,9 +301,8 @@ body {
 
 /* footer */
 footer, #push {
-	/* fixed o sticky si hay mucho contenido */
-	padding-top: 10px;
-	position: fixed;
+	/* fixed o sticky si hay mucho contenido */ 
+	position: absolute;
 	bottom: 0;
 	width: 100%;
 
