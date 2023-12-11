@@ -348,14 +348,20 @@ body {
 	font-weight: 400;
 	word-wrap: break-word;
 }
-
+/* falta cambiar letra y todo */
 @media (max-width: 576px) {
-	
+	.agenda_pos{
+	width: 170px;
+	height: 240px;
+	right: 0;
+	}
 }
 
 @media (min-width: 577px) and (max-width: 1000px) {
-	.contenedor_agenda{
-		right: 0;
+	.agenda_pos{
+	width: 260px;
+	height: 310px;
+	right: 0;
 	}
 }
 
@@ -364,8 +370,9 @@ body {
 	
 	background: linear-gradient(10deg, rgba(213,213,213,1) 0%, rgba(1,130,12,0.9556197478991597) 100%, rgba(166,198,167,1) 100%);
 	position: relative;
-	width: 59%;
-	margin: 2% 4.5em;
+	width: 65%;
+	height: 20vw;
+	margin: 2% 1.4em;
 	padding: 1.5em 1em;
 	padding-bottom: 7em;
 }
@@ -373,13 +380,14 @@ body {
 	font-family: 'Nunito', sans-serif;
 	background: #8dcc6a;
 	color: white;
-	text-align: center;
+	width: 80%;
 	padding: 0.4em;
+	text-align: center;
 	border-radius: 10px;
 	position: absolute;
 	top: 0;
-	left: 4em;
-	font-size: 1.4em;
+	left: 2em;
+	font-size: 1em;
 
 }
 .section_noticias p, h4{
@@ -390,33 +398,79 @@ body {
 	font-weight: 600;
 	width: 100%;
 	position: absolute;
-	top: 4em;
+	top: 5em;
 }
 .noticia_dos{
 	font-weight: 600;
 	width: 100%;
 	position: absolute;
-	top: 5.5em;
+	top: 7em;
 
 }
 .saber_mas{
 	font-weight: 800;
-	width: 38%;
+	width: 45%;
 	position: absolute;
 	bottom: 0;
-	right: 1px;
-	
-}
-	
-
-
-/* section 4 */
-.section_cuatro{
-
+	right: 5px;
 }
 
+@media (max-width: 576px) {
+	.section_noticias{ 
+	width: 45vw;
+	height: 40vw;
+	margin: 2% 0.1em;
+	padding: 1.5em 1em;
+	padding-bottom: 1em;
+	}
+	.section_noticias h2{
+	width: 80%;
+	font-size: 0.7em;
+	}
+	.section_noticias p, h4{
+	font-size: 0.7em;
+	}
+	.noticia_uno{
+	top: 5.5em;
+	}
+	.noticia_dos{
+	top: 8em;
 
+	}
+	.section_noticias h4{
+	width: 80%;
+	font-size: 0.7em;
+	}
+}
 
+@media (min-width: 577px) and (max-width: 1000px) {
+	.section_noticias{ 
+	width: 50vw;
+	height: 35vw;
+	margin: 2% 0.1em;
+	padding: 1.5em 1em;
+	padding-bottom: 1em;
+	}
+	.section_noticias h2{
+	width: 70%;
+	font-size: 0.9em;
+	}
+	.noticia_uno{
+	top: 6.5em;
+	}
+	.noticia_dos{
+	top: 9em;
+
+	}
+	.section_noticias p, h4{
+	font-size: 1em;
+	}
+	.saber_mas{
+	width: 90%;
+	right: 0;
+	font-size: 0.9em;
+	}
+}
 
 /* footer */
 footer{
