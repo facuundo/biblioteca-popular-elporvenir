@@ -289,27 +289,6 @@ body {
 	position: absolute;
 	background: #D9D9D9;
 }
-.back_agenda_tres{
-	width: 300px;
-	height: 32px;
-	right: 1em;
-	top: 13.5em;
-	position: absolute;
-	background: #D9D9D9;
-}
-.evento_tres{
-	width: 300px;
-	height: 32px;
-	right: 1em;
-	top: 13.1em;
-	position: absolute;
-	text-align: center;
-	color: black;
-	font-size: 17px;
-	font-family: serif;
-	font-weight: 400;
-	word-wrap: break-word;
-}
 .evento_dos{
 	width: 300px;
 	height: 32px;
@@ -348,20 +327,14 @@ body {
 	font-weight: 400;
 	word-wrap: break-word;
 }
-/* falta cambiar letra y todo */
+
 @media (max-width: 576px) {
-	.agenda_pos{
-	width: 170px;
-	height: 240px;
-	right: 0;
-	}
+	
 }
 
 @media (min-width: 577px) and (max-width: 1000px) {
-	.agenda_pos{
-	width: 260px;
-	height: 310px;
-	right: 0;
+	.contenedor_agenda{
+		right: 0;
 	}
 }
 
