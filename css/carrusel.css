@@ -2,11 +2,11 @@
 #container-slider{
 	position: relative;
 	display: block;
-	width: 60vw;
+	width: 94vw;
 	height: 37vw;
 	margin: 0 1.5em;
-	margin-top: 3em;
-	margin-bottom: 8em;
+	margin-top: 1em;
+	margin-bottom: 9em;
 }
 #slider{
 	position: relative;
@@ -140,19 +140,13 @@
         font-size: 10pt;
     }
 	#container-slider{
-	width: 80vw;
-	height: 95vw;
-	margin-top: 15em;
-	margin-bottom: 1em;
+	margin-bottom: 19em;
 	}
 }
 
 @media (min-width: 577px) and (max-width: 1000px) {
 	#container-slider{
-	width: 80vw;
-	height: 50vw;
-	margin-top: 15em;
-	margin-bottom: 14em;
+
 	}
 	.content_slider h2 {
         font-size: 22pt !important;
@@ -166,4 +160,8 @@
     .btnSlider{
         padding: 10px 30px;
         font-size: 12pt;
+    }
+    #container-slider{
+	margin-bottom: 18.5em;
+	}
 }
