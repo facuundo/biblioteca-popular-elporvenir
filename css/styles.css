@@ -187,12 +187,20 @@ body {
 }
 .barra_nav li{
 	list-style: none;
-
 }
 .barra_nav li a{
 	color: white;
 	font-family: 'Lato';
 	text-transform: uppercase;
+	text-decoration: underline #696758 solid 1.5px;
+	transition: all 0.6s ease-in;
+}
+.barra_nav li a:hover, .barra_nav li a.focus{
+	color: lightgreen;
+	text-decoration: underline lightgreen solid 1.5px;
+}
+.barra_nav li a:focus-visible{
+	outline: none;
 }
 
 @media (max-width: 576px) {
@@ -201,7 +209,7 @@ body {
 	}
 	.barra_nav{
 	gap: 9px;
-	font-size: 0.6em;
+	font-size: 0.5em;
 	}
 }
 
@@ -211,7 +219,7 @@ body {
 	}
 	.barra_nav{
 	gap: 10px;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	}
 }
 
@@ -256,7 +264,7 @@ body {
 	background: linear-gradient(10deg, rgba(213,213,213,1) 0%, rgba(1,130,12,0.9556197478991597) 100%, rgba(166,198,167,1) 100%);
 	position: relative;
 	width: 50%;
-	height: 30vw;
+	height: 50;
 	margin: 2% 1.4em;
 	padding: 1.5em 1em;
 	left: 0;

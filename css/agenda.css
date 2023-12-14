@@ -1,0 +1,72 @@
+body {
+    background: #FBFCEE;
+    position: relative;
+    padding-bottom: 6em;
+    min-height: 100vh;
+}
+.container-agenda{
+    width: 95%;
+    height: 100%;
+    background: #C9FDB1;
+    margin: 1.6em;
+    position: relative;
+}
+.container-agenda h1{
+    text-align: center;
+    width: 100%;
+    padding: 0.2em;
+    font-family: 'Roboto', serif;
+}
+.container-agenda p{
+    width: 100%;
+    text-align: justify-all;
+    padding-left: 1em;
+    font-size: 1.1em;
+    font-family: serif;
+}
+.noticia-dos{
+    margin-top: 1em;
+
+}
+@media (max-width: 576px) {
+    .container-agenda{
+    width: 90%;
+    height: 100%;
+    margin: 0.3em;
+    }
+    
+.container-agenda h1{
+    padding: 0.2em;
+    font-size: 1em;
+    }
+.container-agenda p{
+    font-size: 0.7em;
+    }
+}
+@media (min-width: 577px) and (max-width: 729px){
+    .container-agenda{
+        height: 100%;
+    }
+    .container-agenda h1{
+    padding: 0.2em;
+    font-size: 1.4em;
+    }
+    .container-agenda p{
+    font-size: 0.9em;
+    line-height: 1.4;
+    }
+}
+@media (min-width: 730px) and (max-width: 1000px){
+    .container-agenda{
+    width: 95%;
+    margin: 1.4em;
+    }
+.container-agenda h1{
+    padding: 0.2em;
+    font-size: 1.5em;
+    }
+.container-agenda p{
+    font-size: 1em;
+    line-height: 1.4;
+    }
+}

@@ -1,0 +1,99 @@
+body {
+	background: #FBFCEE;
+	position: relative;
+	padding-bottom: 7em;
+	min-height: 100vh;
+}
+.container-sobre-nosotros{
+	width: 90%;
+	height: 100%;
+	background: #C9FDB1;
+	margin: 2% auto;
+	position: relative;
+}
+.titulo_sobre-nosotros{
+	text-align: center;
+	width: 100%;
+	padding: 0.2em;
+	font-family: 'Roboto', serif;
+	text-transform: uppercase;
+}
+.container-sobre-nosotros h3{
+	font-family: serif;
+	width: 100%;
+	text-align: justify;
+	margin: 0.5em;
+	padding-left: 1em;
+	font-size: 1.6em;
+}
+.container-sobre-nosotros p, li{
+	width: 100%;
+	text-align: justify-all;
+	padding-left: 1em;
+	font-size: 1.1em;
+	font-family: serif;
+}
+.container-sobre-nosotros li{
+	list-style: none;
+	width: 40%;
+	margin-bottom: 0.4em;
+	line-height: 1.3;
+}
+.container-sobre-nosotros li:hover{
+	background-color: darkolivegreen;
+  	color: white;
+}
+@media (max-width: 576px) {
+	.container-sobre-nosotros{
+	width: 90%;
+	}
+	.titulo_sobre-nosotros{
+	padding: 0.2em;
+	font-size: 1.2em;
+	}
+	.container-sobre-nosotros h3{
+	font-size: 0.9em;
+	}
+	.container-sobre-nosotros p, li{
+	font-size: 0.7em;
+	}
+}
+@media (min-width: 577px) and (max-width: 759px){
+	.container-sobre-nosotros{
+	width: 92%;
+	}
+	
+.titulo_sobre-nosotros{
+	padding: 0.2em;
+	font-size: 1.4em;
+}
+.container-sobre-nosotros h3{
+	font-size: 1.1em;
+}
+.container-sobre-nosotros p, li{
+	font-size: 0.9em;
+	}
+}
+@media (min-width: 760px) and (max-width: 1000px) {
+	.container-sobre-nosotros{
+	width: 93%;
+	height: 100%;
+	}
+	
+.titulo_sobre-nosotros{
+	padding: 0.2em;
+	font-size: 1.4em;
+}
+.container-sobre-nosotros h3{
+	font-size: 1.1em;
+}
+.container-sobre-nosotros p, li{
+	font-size: 0.9em;
+	}
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
